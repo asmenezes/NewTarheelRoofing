@@ -265,6 +265,9 @@ background-size: cover;
   font-size: 2em;
   font-weight: bold;
 }
+.yellow{
+  background-color: var(--main-yellow);
+}
 #topnav a:hover {
   color: var(--main-yellow);
 }
@@ -345,7 +348,7 @@ width: 100vw;
     max-width: 100vw;
   }
   .threebox{
-    display: block;   
+    display: block;
   }
   .diss {
     display: none;
