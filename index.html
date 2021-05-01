@@ -171,8 +171,36 @@
             </p>
           </div>
         </section>
-
-
+            <div class="skinny">
+        <h1 class="bigheading">CONTACT US</h1>
+            <p class="textpara">
+              For questions, comments, quotes and refferals please fill out the form
+              below. A team member will reach out as soon as possible.
+            </p>
+            <!--Contact form-->
+            <form class="formgrid" action="./contactmail.php" method="post">
+              <label for="name">Name *</label>
+              <input type="text" name="name" value="" required />
+              <label for="phone">Phone Number</label>
+              <input type="text" name="phone" value="" />
+              <label for="email" required>Email Address *</label>
+              <input type="email" name="email" value="" />
+              <label for="subject" required>Subject *</label>
+              <input type="text" name="subject" value="" />
+              <label for="message" required>Message *</label>
+              <textarea name="message" rows="8"></textarea>
+              <label for="addr">Service Address</label>
+              <input type="text" name="addr" value="" />
+              <label for="city">City</label>
+              <input type="text" name="city" value="" />
+              <label for="state">State</label>
+              <input type="text" name="state" value="" />
+              <label for="zip">Zip</label>
+              <input type="text" name="zip" value="" />
+              <input type="submit" name="submit" value="SUBMIT" class="button" />
+            </form>
+          </div>
+</div>
   </body>
   <footer>
 <h1 class="fquote">Secure your home from mother nature and the power bill</h1>
