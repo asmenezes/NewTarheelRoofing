@@ -106,7 +106,7 @@ input {
   width: 100%;
   height: auto;
   min-height: 30vw;
-  padding: 2.5em 0;
+
   background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
@@ -275,6 +275,9 @@ background-size: cover;
   display: grid;
   grid-template-columns: min-content 1fr max-content;
   height: calc(100px + 2em);
+  float: right;
+width: 100vw;
+
 }
 #vidcut {
   display: block;
@@ -307,7 +310,8 @@ background-size: cover;
 }
 @media screen and (max-width: 900px) {
   .halfImage {
-
+    height: 100%;
+    min-height: 75vw;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
