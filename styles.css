@@ -98,6 +98,25 @@ input {
 .boxtext {
   padding: 0 3em;
 }
+.threebox{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5vw;
+}
+.tboxtext{
+  margin: 2em;
+  font-weight: bolder;
+  text-align: center;
+  padding: 2em;
+  border: solid;
+  border-width: 0.5em;
+      border-color: transparent;
+
+}
+.tboxtext:hover{
+
+    border-color: var(--main-yellow);
+}
 .textpara {
   margin-bottom: 2em;
 }
@@ -324,6 +343,9 @@ width: 100vw;
 
     grid-template-columns: 1fr;
     max-width: 100vw;
+  }
+  .threebox{
+    display: block;   
   }
   .diss {
     display: none;
