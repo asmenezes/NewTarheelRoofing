@@ -321,7 +321,7 @@ width: 100vw;
   }
   .doubler {
     display: grid;
-    grid-row-gap: 25px;
+
     grid-template-columns: 1fr;
     max-width: 100vw;
   }
