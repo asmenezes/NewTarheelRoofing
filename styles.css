@@ -299,6 +299,7 @@ background-size: cover;
   height: calc(100px + 2em);
   float: right;
 width: 100vw;
+transition: background-color 0.5s;
 
 }
 #vidcut {
