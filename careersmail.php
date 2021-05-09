@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
 
 
   mail($to,$subject,$message,$headers);
-  header("Location: ./careersfilled.html");
+  header("Location: ./index.html");
 }
 
 ?>
