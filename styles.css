@@ -280,6 +280,30 @@ background-size: cover;
 .floatlink.sm{
   top:-110px;
 }
+@keyframes logo {
+  0% {
+    width: 10%;
+    display: block;
+  }
+  99% {
+    width: 30%;
+  display: block;
+  opacity: 100%;
+}
+  100% {
+    opacity: 0;
+
+  }
+}
+#vidlogo{
+  width: 10%;
+  display: block;
+  margin: auto;
+  margin-top: 30%;
+  animation-name: logo;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
 #topnav a:hover {
   color: var(--main-yellow);
 }
