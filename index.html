@@ -24,29 +24,21 @@
       </li>
       <li><a href="./index.html">HOME</a></li>
       <li>
-        <div class="navdropdown">
-          <a href="./under-construction.html">
+            <a href="#about">
             ABOUT
           </a>
-          <div class="navdropdowncont">
-            <a href="./under-construction.html">OWNERS</a>
-            <a href="./about/business.html">BUSINESS PHILOSOPHY</a>
-          </div>
-        </div>
+            <li><a href="#services">SERVICES</a></li>
       </li>
             <li><a href="./testimonials.html">TESTIMONIALS</a></li>
       <li>
         <div class="navdropdown">
-          <a href="./contact.html">
+          <a href="#contact">
             CONTACT US
           </a>
           <div class="navdropdowncont">
-            <a href="./careers.html">CAREERS</a>
+            <a href="#careersform">CAREERS</a>
           </div>
         </div>
-      </li>
-      <li>
-        <a href="./under-construction.html" class="circled"> ASAP-FIX</a>
       </li>
     </ul>
   </nav>
@@ -65,7 +57,8 @@
         <!--1st set-->
 
         <div class="halfbox">
-          <h1 class="boxtitle">About Us</h1>
+          <h1 class="boxtitle" id="abouti">About Us</h1>
+          <span id="about" class="floatlink"></span>
           <p class="boxtext">
             Tar Heel Roofing and Solar is a locally owned roofing and construction company serving Chapel Hill and the Triangle. After a combined 12 years in the roofing industry, and irritated by dishonest contractors, owners Josh Lawrence and Kadir Ahmedjanov opened up Tar Heel for business. Though our company was officially founded in 2020, our team has a combined 30 years of experience in roofing and exterior home modeling.
           </p>
@@ -105,7 +98,7 @@
           </div>
 
           <div class="halfbox">
-
+  <span id="services" class="floatlink sm"></span>
             <span class="listtitle">
               <span class="slashthing">/</span>
               Asphalt Roofing</span>
@@ -180,12 +173,14 @@
             careers page.
           </p>
         </div>
+<div class="doubler">
+
 
         <!--end Business PHILOSOPHY-->
-        <section id="contactform">
-            <div class="skinny">
+        <section id="contactform" class="yellow skinnymobile">
+  <span id="contact" class="floatlink sm"></span>
         <h1 class="bigheading">CONTACT US</h1>
-            <p class="textpara">
+            <p class="textpara slim">
               For questions, comments, quotes and refferals please fill out the form
               below. A team member will reach out as soon as possible.
             </p>
@@ -211,8 +206,35 @@
               <input type="text" name="zip" value="" />
               <input type="submit" name="submit" value="SUBMIT" class="button" />
             </form>
-          </div>
+
                 </section>
+                <section id="careersform" class = "skinnymobile">
+  <span id="careers" class="floatlink sm"></span>
+      <h1 class="bigheading">CAREERS</h1>
+      <p class="textpara slim">
+        For career opportunities please fill out the form below.
+      </p>
+      <!--Contact form-->
+      <form class="formgrid" action="./careersmail.php" method="post">
+        <label for="name">Name *</label>
+        <input type="text" name="name" value="" required />
+        <label for="phone">Phone Number *</label>
+        <input type="text" name="phone" value="" required />
+        <label for="email">Email Address *</label>
+        <input type="email" name="email" value="" required />
+        <label for="position">Position *</label>
+        <select name="position" id="position" required>
+          <option value="Roofer">Roofer</option>
+          <option value="Solar">Solar Technician</option>
+          <option value="Painter">Painter</option>
+          <option value="Siding">Siding</option>
+          <option value="Gutters">Gutters</option>
+        </select>
+        <input type="submit" name="submit" value="SUBMIT" class="button" />
+      </form>
+
+  </section>
+</div>
 </div>
   </body>
   <footer>
