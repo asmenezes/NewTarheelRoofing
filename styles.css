@@ -285,10 +285,13 @@ background-size: cover;
     width: 10%;
     display: block;
   }
+  80%{
+    opacity: 100%
+  }
   99% {
     width: 30%;
   display: block;
-  opacity: 100%;
+
 }
   100% {
     opacity: 0;
