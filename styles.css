@@ -18,7 +18,7 @@ dark: #edac46
 * {
   padding: 0;
   margin: 0;
-  font-family: Rubik;
+  font-family: Poppins;
   text-decoration: none;
 }
 a {
@@ -28,10 +28,10 @@ a:visited {
   color: white;
 }
 label {
-  font-weight: lighter;
+  font-weight: normal;
 }
 p {
-  font-weight: lighter;
+  font-weight: regular;
 }
 footer {
   background-color: var(--light-action);
@@ -125,11 +125,12 @@ input {
  width: 100%;
   height: auto;
   min-height: 30vw;
-
-  background-attachment: fixed;
-/*background-position: center;*/
+background-color: white;
+background-image: none !important;
+  /*background-attachment: fixed;
+background-position: center;
 background-repeat: no-repeat;
-background-size: cover;
+background-size: cover;*/
 }
 .halfbox {
   padding: 2.5em 0;
@@ -204,8 +205,9 @@ background-size: cover;
 .tquote {
   text-align: center;
   line-height: 2;
-  font-family: "Roboto Slab";
-  font-weight: normal;
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 400;
 }
 .qtitle {
   font-size: 2em;
@@ -224,8 +226,8 @@ background-size: cover;
   display: block;
   color: var(--action-color);
   text-align: center;
-  font-family: "Roboto Slab";
-  font-weight: lighter;
+  font-family: "Poppins";
+
 }
 /*nav dropdown stuff*/
 .navdropdowncont {

@@ -1,25 +1,22 @@
 <?php
 if(isset($_POST['submit'])){
   $to = "Kadir@TarHeelRoofingandSolar.com";
-  $subject = $_POST['subject'];
+
   $cont = $_POST['message'];
-  $from = $_POST['email'];
+
   $phone = $_POST['phone'];
-  $address = $_POST['addr'];
+
   $name = $_POST['name'];
-  $state = $_POST['state'];
+
   $message = "
   <html>
   <head>
   <title>HTML email</title>
   </head>
   <body>
-  <h1>".$subject."</h1>
+
   <p>From: ".$name."</p>
-  <p>Email ".$from."</p>
-  <p>Address ".$address."</p>
-  <p>City ".$city."</p>
-  <p>State ".$state."</p>
+  <p>Number ".$phone."</p>
   <p>Message: ".$cont."</p>
   </body>
   </html>
