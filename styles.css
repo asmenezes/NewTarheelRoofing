@@ -49,6 +49,7 @@ input {
   border-width: 1px;
   height: 2em;
 }
+
 .navlist {
   display: inline-block;
 }
@@ -299,6 +300,9 @@ background-size: cover;*/
     opacity: 0;
 
   }
+}
+.high{
+  color: var(--main-yellow) !important;
 }
 #vidlogo{
   width: 10%;

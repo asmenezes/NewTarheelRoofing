@@ -8,13 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="canonical" href="https://www.TarHeelRoofingandSolar.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="./scripts/active-menu-link.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css" />
     <title>Home | Tar Heel | NC</title>
     <script src="./components/footer.js" type="text/javascript" defer></script>
-    <script src="./scripts/scripts.js" type="text/javascript"></script>
+
     <link rel="icon" type="image/x-icon" href="./assets/Favicon.png" />
+
   </head>
+    <body>
   <nav id="topnav">
     <a href="#">
       <img class="logo" src="./assets/WhiteLogo.png" alt="logo" />
@@ -24,20 +27,20 @@
       <li onclick="menuSwap()">
         <img src="./assets/menu.svg" alt="menu" class="menu" />
       </li>
-      <li><a href="./index.html">HOME</a></li>
+      <li><a href="./index.html" id="navhome">HOME</a></li>
       <li>
-            <a href="#about">
+            <a href="#about"id="navabout">
             ABOUT
           </a>
-          <li><a href="#expectations">EXPECTATIONS</a></li>
-            <li><a href="#services">SERVICES</a></li>
+          <li><a href="#expectations"id="navexpectations">EXPECTATIONS</a></li>
+            <li><a href="#services"id="navservices">SERVICES</a></li>
     <li>
         <div class="navdropdown">
-          <a href="#contact">
+          <a href="#contact"id="navcontact">
             CONTACT US
           </a>
           <div class="navdropdowncont">
-            <a href="#careers">CAREERS</a>
+            <a href="#careers"id="navcareers">CAREERS</a>
           </div>
         </div>
       </li>
@@ -55,13 +58,14 @@
         <img src="./assets/TarHeelLogoWhite.svg" id="vidlogo"/>
     </div>
   </header>
-  <body>
+
+
       <section class="doubler">
         <!--1st set-->
 
         <div class="halfbox">
           <h1 class="boxtitle" id="abouti">INTEGRITY. TRANSPARENCY. VALUE.</h1>
-          <span id="about" class="floatlink"></span>
+          <span id="about" class="floatlink section"></span>
           <p class="boxtext">
             Integrity is illustrated, not verbalized. Here are the pictures you can expect,
             from a repair to a full roof replacement:
@@ -77,7 +81,7 @@
         </div>
 
         <div class="halfbox yellow">
-          <span id="expectations" class="floatlink"></span>
+          <span id="expectations" class="floatlink section"></span>
           <h1 class="boxtitle">Expectations</h1>
           <p class="boxtext">
             After calling our office and requesting a quote or consultation, a member of
@@ -134,7 +138,7 @@
 
       </section>
 
-<a name = "services"></a>
+<a name = "services" class="section"></a>
             <section class="doubler">
           <!--1st set-->
 
@@ -352,7 +356,7 @@ prompt, clean, and professional service.
   </section>
 </div>
 </div>
-  </body>
+
   <footer>
 <h1 class="fquote">Secure your home from mother nature and the power bill</h1>
 
@@ -370,5 +374,20 @@ prompt, clean, and professional service.
 <p class="ftext">1-919-245-7766</p>
 <br>
 <p class="ftext">TAR HEEL ROOFING AND SOLAR LLC</p>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60b40efb6699c7280da9c265/1f6vll1uj';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </footer>
+  <script src="./scripts/scripts.js" type="text/javascript"></script>
+  </body>
 </html>
