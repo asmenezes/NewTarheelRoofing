@@ -126,12 +126,12 @@ input {
  width: 100%;
   height: auto;
   min-height: 30vw;
-background-color: white;
-background-image: none !important;
-  /*background-attachment: fixed;
+/*background-color: white;
+background-image: none !important;*/
+  background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
-background-size: cover;*/
+background-size: cover;
 }
 .halfbox {
   padding: 2.5em 0;
