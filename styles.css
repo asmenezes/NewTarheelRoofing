@@ -129,9 +129,9 @@ input {
 /*background-color: white;
 background-image: none !important;*/
   background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+/*background-position: center;*/
+background-repeat: repeat-x;
+background-size: 50%;
 }
 .halfbox {
   padding: 2.5em 0;
@@ -382,6 +382,8 @@ transition: background-color 0.5s;
     min-height: 75vw;
     margin-left: auto;
     margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
     padding: 0;
   }
   .skinny, .skinnymobile {
