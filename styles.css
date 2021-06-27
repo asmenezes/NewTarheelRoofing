@@ -129,14 +129,17 @@ input {
 /*background-color: white;
 background-image: none !important;*/
   background-attachment: fixed;
-/*background-position: center;*/
+background-position: 0% calc(100px + 2em);
 background-repeat: repeat-x;
 background-size: 50%;
 }
 .halfbox {
   padding: 2.5em 0;
 }
+.phone{
+  margin-top: -2em;
 
+}
 .fquote,
 .ftext {
   display: block;
@@ -304,6 +307,10 @@ background-size: 50%;
 .high{
   color: var(--main-yellow) !important;
 }
+.otherheader{
+  height: calc(100px + 2em);
+  background-color: black;
+}
 #vidlogo{
   width: 10%;
   display: block;
@@ -385,6 +392,7 @@ transition: background-color 0.5s;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
+    background-position: 0% 0%;
   }
   .skinny, .skinnymobile {
     padding: 10vw 10vh;
