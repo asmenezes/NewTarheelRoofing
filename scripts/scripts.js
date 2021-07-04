@@ -30,6 +30,8 @@ win.onscroll = function(){
 #careers
 
 */
+
+/*
 let linksArr = [];
 let posArr = [];
 let sectionArr = [];
@@ -91,3 +93,18 @@ document.addEventListener('scroll', function(e) {
 
   },500);
 });
+*/
+/*
+Gutter Guard Slides
+*/
+let gutterImage = document.getElementById('gg');
+let currentGGIndex = 0;
+nextImg();
+// "background-image" → "url(\"./assets/Third.jpg\")" }
+win.setInterval(nextImg,2000);
+function nextImg(){
+  currentGGIndex++;
+  currentGGIndex %= 6;
+gutterImage.style.backgroundImage =  "url(\"./assets/GG" + currentGGIndex + ".jpg\")";
+console.log(gutterImage.style.backgroundImage);
+}
