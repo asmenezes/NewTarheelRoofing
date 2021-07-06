@@ -286,12 +286,19 @@ background-size: 50%;
 .floatlink.sm{
   top:-110px;
 }
+.roofImages{
+  scroll-snap-type: y mandatory;
+  height: calc(100vh - 100px - 2em);
+    overflow-y: scroll;
+}
 .teslaStyle{
   height: calc(100vh - 100px - 2em);
   display: block;
   margin-left: auto;
   margin-right: auto;
+  scroll-snap-align: start;
 }
+
 @keyframes logo {
   0% {
     width: 10%;

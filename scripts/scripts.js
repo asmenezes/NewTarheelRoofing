@@ -105,6 +105,6 @@ win.setInterval(nextImg,2000);
 function nextImg(){
   currentGGIndex++;
   currentGGIndex %= 6;
-gutterImage.style.backgroundImage =  "url(\"./assets/GG" + currentGGIndex + ".jpg\")";
+gutterImage.style.backgroundImage =  "url(\"./assets/GG" + currentGGIndex + "LRR.jpg\")";
 console.log(gutterImage.style.backgroundImage);
 }
