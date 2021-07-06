@@ -98,6 +98,7 @@ document.addEventListener('scroll', function(e) {
 Gutter Guard Slides
 */
 let gutterImage = document.getElementById('gg');
+gg.style.backgroundColor = "darkgray"
 let currentGGIndex = 0;
 nextImg();
 // "background-image" → "url(\"./assets/Third.jpg\")" }
