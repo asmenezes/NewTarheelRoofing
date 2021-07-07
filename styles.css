@@ -469,12 +469,27 @@ transition: background-color 0.5s;
     font-size: 200%;
   }
   .formgrid {
-    width: 100%;
-    min-width: 100%;
+    width: 80vw;
+    min-width: 80vw;
     margin-left: auto;
     margin-right: auto;
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .skinnymobile{
+    padding: 5vw;
+  }
+  .listtitle {
+    font-size: 1.5em;
+    color: var(--dark-grey);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 1.5em;
+  }
+  .textpara.box {
+    padding: 1.5em;
+    font-size: 1.25em;
+    font-weight: bold;
   }
   #topnav {
     z-index: 2;
@@ -484,5 +499,8 @@ transition: background-color 0.5s;
     text-align: center;
     padding: 1em;
     font-size: 300%;
+  }
+  #contactform{
+
   }
 }
