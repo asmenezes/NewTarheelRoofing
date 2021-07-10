@@ -56,12 +56,11 @@
   </header>
 
 <div class="roofImages">
-  <img src="assets/RoofCap.png" alt=""  class="teslaStyle">
-  <img src="assets/RoofVent.png" alt="" class="teslaStyle">
-  <img src="assets/RoofShingles.png" alt="" class="teslaStyle">
-  <img src="assets/RoofDeck.png" alt="" class="teslaStyle">
-    <img src="assets/RoofBarrier.png" alt="" class="teslaStyle">
-  <img src="assets/Roofwood.png" alt="" class="teslaStyle">
+  <img src="assets/Zeroth.jpg" alt=""  class="teslaStyle">
+  <img src="assets/First.jpg" alt="" class="teslaStyle">
+  <img src="assets/Second.jpg" alt="" class="teslaStyle">
+  <img src="assets/Third.jpg" alt="" class="teslaStyle">
+
 </div>
         <!--1st set-->
 
@@ -99,6 +98,33 @@
 <p class="ftext">© 2021 Tar Heel Roofing and Solar LLC. All rights reserved.</p>
 
 </footer>
+<!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "103183615200630");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
   <script src="./scripts/scripts.js" type="text/javascript"></script>
   </body>
 </html>
