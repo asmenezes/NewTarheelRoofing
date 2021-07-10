@@ -497,6 +497,7 @@ transition: background-color 0.5s;
   }
   #topnav {
     z-index: 2;
+      height: calc(100px + 2em);
   }
   #mainhero {
     color: white;
