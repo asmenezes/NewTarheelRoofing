@@ -387,12 +387,12 @@ transition: background-color 0.5s;
   position: absolute;
   z-index: -10;
 
-  top: 50%;
-  left: 50%;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  top: 31%;
+  left: 25%;
+  -ms-transform: translateX(-25%) translateY(-15%);
+  -moz-transform: translateX(-25%) translateY(-15%);
+  -webkit-transform: translateX(-25%) translateY(-15%);
+  transform: translateX(-25%) translateY(-15%);
   background-size: cover;
 
   background-color: black;
