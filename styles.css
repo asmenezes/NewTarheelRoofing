@@ -409,7 +409,8 @@ transition: background-color 0.5s;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
-    background-position: 0% 0%;
+    background-position: center;
+    background-attachment: scroll; 
   }
   .skinny, .skinnymobile {
     padding: 10vw 10vh;
@@ -494,6 +495,9 @@ transition: background-color 0.5s;
     padding: 1.5em;
     font-size: 1.25em;
     font-weight: bold;
+  }
+  .boxtitle {
+    font-size: 250%;
   }
   #topnav {
     z-index: 2;
