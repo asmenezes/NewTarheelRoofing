@@ -410,7 +410,7 @@ transition: background-color 0.5s;
     background-size: cover;
     padding: 0;
     background-position: center;
-    background-attachment: scroll; 
+    background-attachment: scroll;
   }
   .skinny, .skinnymobile {
     padding: 10vw 10vh;
@@ -511,5 +511,13 @@ transition: background-color 0.5s;
   }
   #contactform{
 
+  }
+  #bgvideo{
+    top: 31%;
+    left: 15%;
+    -ms-transform: translateX(-35%) translateY(-15%);
+    -moz-transform: translateX(-35%) translateY(-15%);
+    -webkit-transform: translateX(-35%) translateY(-15%);
+    transform: translateX(-35%) translateY(-15%);
   }
 }
