@@ -18,8 +18,10 @@ dark: #edac46
 * {
   padding: 0;
   margin: 0;
-  font-family: Poppins;
+  font-family:  'Oswald','Familjen Grotesk',Poppins;
   text-decoration: none;
+  color: var(--dark-grey);
+  font-weight: 300;
 }
 a {
   color: white;
@@ -29,6 +31,7 @@ a:visited {
 }
 label {
   font-weight: normal;
+  color: black;
 }
 p {
   font-weight: regular;
@@ -75,21 +78,28 @@ input {
 }
 .button {
   display: block;
-  color: var(--action-color);
+  color: black;
   padding: 1.25em;
-  font-weight: 500;
   background-color: var(--main-yellow);
   width: max-content;
   margin-right: auto;
   margin-left: auto;
   margin-top: 2em;
   margin-bottom: 1em;
-  border: none;
+  border: solid;
+  border-width: 1px;
+  border-color: transparent;
   height: auto;
+  border-width: 1px;
+}
+.button:visited{
+  color: var(--dark-gray);
 }
 .button:hover{
     background-color: #bbbbbb30;
-
+    border-style: solid;
+    border-color: var(--dark-gray);
+    border-width: 1px;
 }
 .boxtitle {
   text-align: center;
@@ -99,6 +109,8 @@ input {
 }
 .boxtext {
   padding: 0 3em;
+  font-size: 1.5em;
+  font-weight: 200;
 }
 .threebox{
   display: grid;
@@ -107,7 +119,7 @@ input {
 }
 .tboxtext{
   margin: 2em;
-  font-weight: bolder;
+  font-weight: 200;
   text-align: center;
   padding: 2em;
   border: solid;
@@ -139,6 +151,7 @@ background-size: 50%;
 }
 .phone{
   margin-top: -2em;
+  color: white;
 
 }
 .fquote,
@@ -166,6 +179,7 @@ background-size: 50%;
   color: var(--accent-color);
   text-align: center;
   padding: 1rem;
+  font-weight: 500;
 }
 .medheading {
   font-size: 150%;
@@ -183,6 +197,7 @@ background-size: 50%;
   margin-right: auto;
   display: grid;
   grid-template-columns: 1fr;
+  color: black;
 }
 .formgrid input,
 .formgrid textarea {
@@ -190,7 +205,7 @@ background-size: 50%;
 }
 .listtitle {
   font-size: 2em;
-  color: var(--dark-grey);
+  color: black;
   text-decoration: none;
   font-weight: bold;
   margin-left: 2em;
@@ -242,6 +257,7 @@ background-size: 50%;
   z-index: 2;
   padding: 1em;
   padding-top: 0;
+  font-weight: 200;
 }
 .navdropdown:hover .navdropdowncont {
   display: block;
@@ -270,7 +286,10 @@ background-size: 50%;
 .textpara.box {
   padding: 2em;
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 200;
+}
+.textpara.slim{
+  color: black;
 }
 .yellow{
   background-color: var(--main-yellow);
@@ -325,6 +344,9 @@ background-size: 50%;
   height: calc(150px + 2em);
   background-color: black;
 }
+#abouti{
+  font-weight: 700;
+}
 #vidlogo{
   width: 10%;
   display: block;
@@ -366,7 +388,7 @@ background-size: 50%;
   float: right;
 width: 100vw;
 transition: background-color 0.5s;
-
+font-weight: 300;
 }
 #vidcut {
   display: block;
@@ -480,13 +502,14 @@ transition: background-color 0.5s;
     margin-right: auto;
     display: grid;
     grid-template-columns: 1fr;
+    color: black;
   }
   .skinnymobile{
     padding: 5vw;
   }
   .listtitle {
     font-size: 1.5em;
-    color: var(--dark-grey);
+    color: black;
     text-decoration: none;
     font-weight: bold;
     margin-left: 1.5em;
@@ -494,7 +517,7 @@ transition: background-color 0.5s;
   .textpara.box {
     padding: 1.5em;
     font-size: 1.25em;
-    font-weight: bold;
+    font-weight: 200;
   }
   .boxtitle {
     font-size: 250%;
@@ -510,7 +533,7 @@ transition: background-color 0.5s;
     font-size: 300%;
   }
   #contactform{
-
+    color: black;
   }
   #bgvideo{
     top: 31%;

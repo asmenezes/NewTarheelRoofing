@@ -28,7 +28,11 @@ if(isset($_POST['submit'])){
 
   // More headers
   $headers .= 'From: <webmaster@andrewsmenezes.com>' . "\r\n";
-
+/*
+  $message = "himm";
+  $is_spam = preg_match("/IM/i",$message);
+  echo $is_spam;
+*/
 
   mail($to,$subject,$message,$headers);
   header("Location: ./index.html");
