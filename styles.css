@@ -152,6 +152,9 @@ background-position: 0% calc(150px + 2em);
 background-repeat: repeat-x;
 background-size: 50%;
 }
+.halfImage.mobile{
+  display: none;
+}
 .halfbox {
   padding: 2.5em 0;
 }
@@ -432,7 +435,11 @@ font-weight: 300;
     height: 100px;
   }
   .halfImage {
-    height: 100%;
+    display: none;
+  }
+  .halfImage.mobile, .halfImage.mobile2{
+    display: block;
+    height: 60%;
     min-height: 75vw;
     margin-left: auto;
     margin-right: auto;
