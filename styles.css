@@ -312,7 +312,7 @@ background-size: 50%;
 }
 .floatlink{
   position: relative;
-  top: -220px;
+  top: calc(-150px - 2.5em);
 }
 .floatlink.sm{
   top:-110px;
@@ -540,6 +540,10 @@ font-weight: 300;
   }
   .boxtitle {
     font-size: 250%;
+  }
+  .floatlink{
+    position: relative;
+    top: calc(-100px - 2.5em);
   }
   #topnav {
     z-index: 2;
