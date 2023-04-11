@@ -33,8 +33,11 @@ if(isset($_POST['submit'])){
   $is_spam = preg_match("/IM/i",$message);
   echo $is_spam;
 */
+  $is_spam = preg_match("/bit\.ly|unsubscribe/i",$message);
+  if($is_spam!= 1){
+    mail($to,$subject,$message,$headers);
+  }
 
-  mail($to,$subject,$message,$headers);
   header("Location: ./index.html");
 }
 
