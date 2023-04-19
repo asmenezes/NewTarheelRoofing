@@ -172,8 +172,8 @@ background-size: 50%;
 
 .fsocials {
   display: grid;
-  grid-template-columns: 1fr repeat(3, min-content) 1fr;
-  grid-column-gap: 2em;
+  grid-template-columns: 1fr repeat(5, min-content) 1fr;
+  grid-column-gap: 3em;
   margin: 1em;
 }
 .soc {
