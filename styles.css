@@ -208,6 +208,10 @@ background-size: 50%;
   grid-template-columns: 1fr;
   color: black;
 }
+.verify{
+  width: 4em;
+  margin: 1em 0;
+}
 .formgrid input,
 .formgrid textarea {
   margin-bottom: 1em;

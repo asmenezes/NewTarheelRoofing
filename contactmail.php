@@ -7,6 +7,7 @@ if(isset($_POST['submit'])){
   $phone = $_POST['phone'];
 
   $name = $_POST['name'];
+  $verify = $_POST['verification']
 
   $message = "
   <html>
@@ -34,7 +35,11 @@ if(isset($_POST['submit'])){
   echo $is_spam;
 */
   $is_spam = preg_match("/bit\.ly|unsubscribe/i",$message);
+  if($verify != 3 or !preg_match("/three/i",$verify)){
+    $is_spam = 1;
+  }
   if($is_spam!= 1){
+
     mail($to,$subject,$message,$headers);
   }
 

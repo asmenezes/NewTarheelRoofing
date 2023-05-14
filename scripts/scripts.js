@@ -107,5 +107,5 @@ function nextImg(){
   currentGGIndex++;
   currentGGIndex %= 6;
 gutterImage.style.backgroundImage =  "url(\"./assets/GG" + currentGGIndex + "LRR.jpg\")";
-console.log(gutterImage.style.backgroundImage);
+//console.log(gutterImage.style.backgroundImage);
 }
