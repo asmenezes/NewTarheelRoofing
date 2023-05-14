@@ -260,22 +260,30 @@ background-size: 50%;
 }
 /*nav dropdown stuff*/
 .navdropdowncont {
-  display: none;
+  /*display: none;
   position: absolute;
-  background-color: var(--action-color);
+  background-color: var(--action-color);*/
   z-index: 2;
-  padding: 1em;
+  padding: 0;
   padding-top: 0;
   font-weight: 200;
 
 }
+.navlist .overalldroplist{
+  padding: 0;
+  margin-right: 0;
+}
+.navquote{
+  margin-left: 0em;
+}
 .navdropdown:hover .navdropdowncont {
-  display: block;
+  /*display: block;*/
 }
 .navdropdowncont a {
-  display: block;
+/*  display: block;*/
   margin-top: 1em;
   z-index: 2;
+  padding: 0 0.5em;
 
 }
 .navdropdowncont a:hover {
@@ -509,6 +517,9 @@ font-weight: 300;
     padding-right: 1em;
   }
   .navdropdown .navdropdowncont {
+    display: block;
+  }
+  .navdropdown .navdropdowncont a{
     display: block;
   }
   .bigheading {
