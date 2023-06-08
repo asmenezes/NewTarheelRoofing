@@ -327,7 +327,10 @@ background-size: 50%;
   top: calc(-150px - 2.5em);
 }
 .floatlink.sm{
-  top:-110px;
+  top:calc(-150px - 3.5em);
+}
+.floatlink.lg{
+  top:calc(-150px - 4em)
 }
 .roofImages{
   scroll-snap-type: y mandatory;
@@ -579,9 +582,18 @@ font-weight: 300;
   #bgvideo{
     top: 31%;
     left: 15%;
-    -ms-transform: translateX(-35%) translateY(-15%);
-    -moz-transform: translateX(-35%) translateY(-15%);
-    -webkit-transform: translateX(-35%) translateY(-15%);
-    transform: translateX(-35%) translateY(-15%);
+    -ms-transform: translateX(-38%) translateY(-15%);
+    -moz-transform: translateX(-38%) translateY(-15%);
+    -webkit-transform: translateX(-38%) translateY(-15%);
+    transform: translateX(-38%) translateY(-15%);
+  }
+  .soc {
+    max-height: 2em;
+  }
+  .fsocials {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, min-content) 1fr;
+    grid-column-gap: 1.5em;
+    margin: 1em;
   }
 }
