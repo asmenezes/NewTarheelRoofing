@@ -23,7 +23,8 @@ if(isset($_POST['submit'])){
   </body>
   </html>
   ";
-
+  $sent = false;
+  $tag = "";
   // Always set content-type when sending HTML email
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
@@ -36,16 +37,25 @@ if(isset($_POST['submit'])){
   echo $is_spam;
 */
   $is_spam = preg_match("/bit\.ly|unsubscribe/i",$message);
-  if($verify != 3 and !preg_match("/three/i",$verify)){
+  if($verify != 5 and $verify != 4 and !preg_match("/four/i",$verify) and preg_match("/five/i",$verify)){
     $is_spam = 1;
   }
+
   if($is_spam!= 1){
 
-  mail($to,$subject,$message,$headers);
+  $sent = mail($to,$subject,$message,$headers);
 //  mail("asmenezes@mail.com",$subject,$message,$headers);
   }
+  if($sent){
+    $tag = "msgsent";
+  }elseif($is_spam == 0){
+    $tag = "msgerr";
+  }else{
+    $tag = "msgfail";
+  }
 
-  header("Location:./index.html");
+//if here with message success or failure
+  header("Location:./index.html"."?m=".$tag."#contact");
 }
 
 ?>

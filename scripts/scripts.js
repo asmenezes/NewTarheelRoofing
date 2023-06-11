@@ -14,10 +14,45 @@ let win = window
 let navbar = document.getElementById('topnav');
 
 win.onscroll = function(){
-  navbar = document.getElementById('topnav');
-   var sTop = (this.pageYOffset || docEl.scrollTop)  - (docEl.clientTop || 0);
-   navbar.style.backgroundColor =  sTop > 100 ? "var(--accent-color)":"transparent" ;
+  animNavbar();
 };
+document.onload = getscroll();
+function getscroll(){
+  animNavbar();
+};
+function animNavbar(){
+  let logo = document.getElementsByClassName("logo")[0];
+
+
+   var sTop = (this.pageYOffset || docEl.scrollTop)  - (docEl.clientTop || 0);
+   if(sTop > 100){
+     navbar.style.backgroundColor = "var(--accent-color)";
+     logo.style.height = "4em";
+   }else{
+      navbar.style.backgroundColor = "transparent" ;
+      logo.style.height = null;
+   }
+
+}
+//show the message for contact form Fill
+document.onload = showMessage();
+function showMessage(){
+
+const parsedUrl = new URL(window.location.href);
+ let shown = (parsedUrl.searchParams.get("m"));
+ if(shown == "msgerr"){
+   let el = document.getElementById("msgtag");
+   el.innerHTML = "We have encountered a problem, please try again.";
+   console.log(el)
+ }else if(shown == "msgfail"){
+   let el = document.getElementById("msgtag");
+   el.innerHTML = "Message not sent, spam detected.";
+ }else if(shown =="msgsent"){
+   let el = document.getElementById("msgtag");
+   el.innerHTML = "Message sent, we will get back to you shortly.";
+ }
+
+}
 /*
 //on document ready
 //get position of all the "links"

@@ -112,10 +112,10 @@
           </div>
 
           <div class="halfbox">
-<span id="roofing" class="floatlink lg"></span>
             <span class="listtitle">
-              <span class="slashthing">/</span>
-              Roofing</span>
+              <span id="roofing" class="floatlink"></span>
+                <span class="slashthing">/</span>
+                Roofing</span>
             <p class="textpara box">
               At Tar Heel Roofing and Solar, we’re committed to providing the highest-quality roofing services to our local communities. That's why all of our contractors are local, ensuring a deep understanding of the unique needs and challenges of the areas we serve. From the initial consultation to the completion of your roofing project, our team will work closely with you to ensure that every detail is accounted for and that the final result exceeds your expectations. We take pride in our workmanship and use only the highest-quality materials to ensure that your roof will last for years to come. Whether you need a simple repair or a complete roof replacement, you can trust our team to provide exceptional service every step of the way. Contact us today to schedule a consultation and see how we can help with your roofing needs.
             </p>
@@ -126,8 +126,8 @@
 
              <img class="halfImage mobile" src="./assets/Window.jpg" alt="window"/>
           <div class="halfbox">
-            <span id="windows" class="floatlink lg"></span>
             <span class="listtitle">
+              <span id="windows" class="floatlink"></span>
                 <span class="slashthing">/</span>
                 Windows</span>
             <p class="textpara box">
@@ -160,7 +160,7 @@ Managing where the water goes is almost as important as the roof itself, as keep
             <span class="listtitle">
               <span id="siding" class="floatlink"></span>
                 <span class="slashthing">/</span>
-              Siding</span>
+                Siding</span>
             <p class="textpara box">
 Replacing your siding is a significant investment that can transform the appearance of your home. With our James Hardie siding, you'll enjoy a high-quality and attractive option that offers low-maintenance durability for many years. Our team of skilled siding installers has the experience to deliver exceptional results that meet your expectations. We also offer competitive pricing and convenient financing options to help you manage your budget. Our team is dedicated to providing excellent customer service, from the moment we inspect your property until the project’s completion. We strive to remain up-to-date with the latest installation techniques, ensuring that our work delivers both aesthetic flair and protection that lasts. Our goal is to provide you with personalized attention and care throughout the entire process.
             </p>
@@ -176,8 +176,8 @@ Replacing your siding is a significant investment that can transform the appeara
 
 </div>
           <div class="halfbox">
-            <span id="damage" class="floatlink lg"></span>
             <span class="listtitle">
+              <span id="damage" class="floatlink"></span>
                 <span class="slashthing">/</span>
                 Wind and Hail Damage</span>
             <p class="textpara box">
@@ -194,8 +194,9 @@ Replacing your siding is a significant investment that can transform the appeara
         We believe that outstanding workmanship starts with a happy employee. This means providing competitive salaries, continuing educational opportunities, and the potential for career advancement. Our team members are the foundation of what we do, and we are proud to be one of the fastest-growing roofing contractors in North Carolina. We are growing quickly and are looking to add our team. Our hiring process is rigorous, but we encourage everyone to apply. If you are a talented roofer, painter, or general laborer, give us a call so we can talk further.
       </p>
       </div>
+      <span id="contact" class="floatlink contact"></span>
         <section id="contactform" class="yellow skinnymobile">
-  <span id="contact" class="floatlink"></span>
+
         <h1 class="bigheading">CONTACT US</h1>
             <p class="textpara slim">
               For questions, comments, quotes and refferals please fill out the form
@@ -203,14 +204,15 @@ Replacing your siding is a significant investment that can transform the appeara
             </p>
             <!--Contact form-->
             <form class="formgrid" action="./contactmail.php" method="post">
+              <span id="msgtag"></span>
               <label for="name">Name *</label>
               <input type="text" name="name" value="" required />
-              <label for="phone" >Phone Number *</label>
-              <input type="text" name="phone" value="" required/>
+              <label for="phone" >Phone Number *   XXX-XXX-XXXX or XXXXXXXXXX</label>
+              <input type="tel" name="phone" value="" pattern = "([0-9]{3}-[0-9]{3}-[0-9]{4})|[0-9]{10}" required/>
               <label for="message" required>Message *</label>
               <textarea name="message" rows="8"></textarea>
               <label for="verification" required>Verification (Please enter the answer to the equation shown)*</label>
-              <img class="verify" src="./assets/Verification.png" alt="Won Plus Too"/>
+              <img class="verify" src="./assets/Verification.png" alt="Too Plus Too"/>
               <input name="verification" ></input>
               <input type="submit" name="submit" value="SUBMIT" class="button" />
             </form>
