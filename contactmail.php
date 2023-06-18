@@ -44,7 +44,7 @@ if(isset($_POST['submit'])){
   if($is_spam!= 1){
 
   $sent = mail($to,$subject,$message,$headers);
-//  mail("asmenezes@mail.com",$subject,$message,$headers);
+  //$sent = mail("asmenezes@mail.com",$subject,$message,$headers);
   }
   if($sent){
     $tag = "msgsent";
