@@ -216,6 +216,9 @@ background-size: 50%;
 .formgrid textarea {
   margin-bottom: 1em;
 }
+.fmail{
+  display: none;
+}
 .listtitle {
   font-size: 2em;
   color: black;
@@ -456,11 +459,16 @@ font-weight: 300;
     min-height: 75vw;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2em;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
     background-position: center;
+    /*Background position center causing hail to move up*/
     background-attachment: scroll;
+  }
+  .halfImage.mobile3{
+    margin-top: 5em;
   }
   .skinny, .skinnymobile {
     padding: 10vw 10vh;
